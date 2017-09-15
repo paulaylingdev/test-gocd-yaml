@@ -10,4 +10,7 @@ pipelines:
             build:
               tasks:
                 - exec:
-                    command: python setup.py test
+                    command: python
+                    arguments:
+                      - setup.py
+                      - test
