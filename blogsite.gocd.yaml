@@ -1,0 +1,12 @@
+pipelines:
+  blogsite:
+    materials:
+      blogsite:
+        git: https://github.com/paulaylingdev/blogsite.git
+    stages:
+      - build:
+          jobs:
+            build:
+              tasks:
+                - exec:
+                    command: python setup.py test
