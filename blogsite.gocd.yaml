@@ -1,5 +1,6 @@
 pipelines:
   blogsite:
+    group: abc
     materials:
       blogsite:
         git: https://github.com/paulaylingdev/blogsite.git
